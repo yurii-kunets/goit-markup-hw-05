@@ -28,7 +28,7 @@
             >Web<span style="color: #000000">Studio</span></a
           >
           <ul class="header-list list">
-            <li class="header-item">
+            <li class="header-item current">
               <a href="./index.html" class="header-link link">Студія</a>
             </li>
             <li class="header-item">
@@ -43,10 +43,13 @@
           <div class="header-contacts list">
             <a href="mailto:info@devstudio.com" class="header-email link">
               <svg class="contacts-icon-envelope" width="16" height="12">
-                <use href="./img/contacts-icon.svg#icon-email-envelope"></use></svg>info@devstudio.com</a
+                <use href="./img/contacts-icon.svg#icon-email-envelope"></use></svg
+              >info@devstudio.com</a
             ><a href="tel:+380961111111" class="header-tel link list">
               <svg class="contacts-icon-smartphone" width="10" height="16">
-                <use href="./img/contacts-icon.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
+                <use href="./img/contacts-icon.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
           </div>
         </div>
       </div>
@@ -56,7 +59,7 @@
         <div class="container">
           <div>
             <h1 class="hero-unique">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="hero-btn">Замовити послугу</button>
+            <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
           </div>
         </div>
       </section>
@@ -405,5 +408,11 @@
         </div>
       </div>
     </section>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
