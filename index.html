@@ -28,7 +28,7 @@
             >Web<span style="color: #000000">Studio</span></a
           >
           <ul class="header-list list">
-            <li class="header-item current">
+            <li class="header-item">
               <a href="./index.html" class="header-link link">Студія</a>
             </li>
             <li class="header-item">
@@ -118,14 +118,17 @@
         <div class="container">
           <h2 class="activities-main">Чим ми займаємося</h2>
           <ul class="activities-list list">
-            <li>
+            <li class="activities-item">
               <img src="./img/activities-img-1.jpg" alt="Діяльність" width="370" height="294" />
+              <p class="activities-cover-text">Десктопні додатки</p>
             </li>
-            <li>
+            <li class="activities-item">
               <img src="./img/activities-img-2.jpg" alt="Діяльність" width="370" height="294" />
+              <p class="activities-cover-text">Мобільні додатки</p>
             </li>
-            <li>
+            <li class="activities-item">
               <img src="./img/activities-img-3.jpg" alt="Діяльність" width="370" height="294" />
+              <p class="activities-cover-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -410,7 +413,11 @@
     </section>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>X</button>
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="" height="">
+            <use href="./img/button-close-modal.svg#icon-button-close-black"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
