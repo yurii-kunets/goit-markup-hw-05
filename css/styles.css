@@ -68,7 +68,7 @@ img {
   column-gap: 50px;
 }
 
-.header-list {
+.header-list::after {
   content: '';
   width: 48px;
   height: 4px;
